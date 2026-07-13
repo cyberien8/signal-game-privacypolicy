@@ -74,12 +74,20 @@
       derived from that IP address, and <strong>ad-interaction data</strong> (such as which ads were
       shown and whether they were viewed or tapped).
     </li>
+    <li>
+      <strong>Purchase records.</strong> If you make an in-app purchase, our purchase-validation
+      provider <strong>RevenueCat</strong> receives the transaction details (which item you bought, a
+      purchase/transaction identifier, and the store receipt) so we can deliver your purchase and
+      prevent fraud. Your payment itself is processed by the Apple App Store or Google Play &mdash;
+      <strong>we never receive your card number or billing details</strong>.
+    </li>
   </ul>
 
   <div class="note">
     We do <strong>not</strong> use any analytics, crash-reporting, or social-media tracking software.
-    The Game currently contains <strong>no in-app purchases</strong>, so we collect no payment or
-    financial information.
+    The Game offers optional <strong>in-app purchases</strong> (in-game currency), handled entirely by
+    the Apple App Store or Google Play &mdash; <strong>we never receive or store your payment card
+    details</strong>.
   </div>
 
   <h2>2. How We Use Information</h2>
@@ -89,6 +97,7 @@
       grant a bonus to the first players who reach a milestone (we store only the Player ID, an
       install rank number, and a timestamp).</li>
     <li>To display advertisements and grant you in-game rewards for watching them.</li>
+    <li>To process, validate, and deliver your in-app purchases.</li>
     <li>To detect and prevent fraud, abuse, and technical problems.</li>
   </ul>
 
@@ -123,6 +132,10 @@
     <li>
       <strong>Supabase</strong> (cloud database that stores your game saves) &mdash;
       <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase Privacy Policy</a>.
+    </li>
+    <li>
+      <strong>RevenueCat</strong> (in-app-purchase processing &amp; receipt validation) &mdash;
+      <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>.
     </li>
   </ul>
 
@@ -165,7 +178,7 @@
 
   <h2>9. International Data Transfers</h2>
   <p>
-    Our service providers (Google and Supabase) may process and store data on servers located in
+    Our service providers (Google, Supabase, and RevenueCat) may process and store data on servers located in
     countries other than your own. By using the App, you understand that your data may be transferred to
     and processed in those locations.
   </p>
